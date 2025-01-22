@@ -12,7 +12,9 @@ from functools import lru_cache
 import numpy as np
 from google.protobuf.timestamp_pb2 import Timestamp
 from PIL import Image, ImageStat
-from torch.multiprocessing import Pool, cpu_count
+from torch.multiprocessing import Pool
+
+from dgp.utils import get_cpu_count as cpu_count
 
 from dgp.proto import dataset_pb2
 from dgp.proto.dataset_pb2 import SceneDataset

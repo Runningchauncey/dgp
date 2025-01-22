@@ -13,7 +13,9 @@ import random
 import time
 from collections import ChainMap, OrderedDict, defaultdict
 from functools import lru_cache, partial
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
+
+from dgp.utils import get_cpu_count as cpu_count
 
 import numpy as np
 import pandas as pd

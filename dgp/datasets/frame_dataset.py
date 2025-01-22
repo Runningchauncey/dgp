@@ -8,7 +8,9 @@ import itertools
 import logging
 import time
 from functools import partial
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
+
+from dgp.utils import get_cpu_count as cpu_count
 
 import numpy as np
 import xarray as xr

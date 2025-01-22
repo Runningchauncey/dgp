@@ -8,8 +8,10 @@ import os
 import subprocess
 import tempfile
 import traceback
-from multiprocessing import Pool, cpu_count
+from multiprocessing import Pool
 from urllib.parse import urlparse
+
+from dgp.utils import get_cpu_count as cpu_count
 
 import boto3
 import botocore
